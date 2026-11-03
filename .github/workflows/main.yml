@@ -23,7 +23,7 @@ jobs:
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v4.7.0
         with:
-          username: ${{ secrets.USER_NAME }}
+          username: ${{ vars.DOCKERUSERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
  
       - name: Build with Pack
