@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: linux-winov
+    runs-on: linux
     permissions:
       contents: read
       packages: write
