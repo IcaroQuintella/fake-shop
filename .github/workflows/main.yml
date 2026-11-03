@@ -25,7 +25,7 @@ jobs:
         with:
           username: ${{ vars.DOCKERUSERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}   
- 
+  
       - name: Build with Pack
         run: pack build --publish icaroquintella/${{ github.event.repository.name }}:latest -t icaroquintella/${{ github.event.repository.name }}:${{ github.sha }}
 
