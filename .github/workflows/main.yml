@@ -26,7 +26,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
+ 
       - name: Build with Pack
         run: pack build --publish ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest -t ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:${{ github.sha }}
 
